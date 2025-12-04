@@ -1,4 +1,22 @@
 body {
   margin:0px; 
-  font-style : sans-serif;
+}
+.flex-container {
+  display: flex;
+  gap: 60px;           
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;  
+  margin: 0 auto;
+}
+.flex-item {
+  background-color: #a0a0a0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
