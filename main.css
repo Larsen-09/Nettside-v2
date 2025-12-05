@@ -1,5 +1,6 @@
 body {
   margin:0px; 
+  background: #2c9b86
 }
 .flex-container {
   display: flex;
@@ -10,7 +11,7 @@ body {
   margin: 0 auto;
 }
 .flex-item {
-  background-color: #a0a0a0;
+  background-color: #efefef;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -19,4 +20,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+.wrapper{
+  align-items: center;
+  justify-content: center;
+  width: 430px;
+  background: #efefef;
+  border-radius: 10px;
+}
+.wrapper h1{
+  font-size: 24px;
+  font-weight: 1000
 }
