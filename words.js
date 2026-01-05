@@ -20,10 +20,6 @@ const wordList = [
         hint: "det største landdyret"
     },
     {
-        word: "amalie skram",
-        hint: "norsk forfatter kjent for sine naturalistiske verk"
-    },
-    {
         word: "fotball",
         hint: "verdens mest populære sport"
     },
