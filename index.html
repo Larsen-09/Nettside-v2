@@ -2,43 +2,41 @@
 <html lang="no">
 <head>
 <meta charset="UTF-8">
-<title>Min side om noe</title>
+<title>Gjettespillet</title>
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<h1>Velkommen til min side om noe</h1>
-<h2>Denne nettsiden skal inneholde ett par javascript greier om ting</h2>
+<h1 class="site-title">Velkommen til min side om noe</h1>
+<h2 class="subtitle">Denne nettsiden skal inneholde ett par javascript greier om ting</h2>
 <div id='container'>
     <div class="flex-container">
         <div class="flex-item item">    
-    <h1>Hallo yabado hva er ditt navn? </h1>
-    <label>Username: </label>
-    <input id="username"><br><br>
+    <h1>Hallo, hva er ditt navn? </h1>
+    <label>Brukernavn: </label>
+    <input id="username" autocomplete="off"><br><br>
     <button id="mysubmit">submit</button>
-    <script src="script.js"></script>
+    <button id="clearname" class="muted">clear</button>
+    <script src="name.js"></script>
     <p id="myhello"></p>
     </div>
-</div>
-
-<div class="wrapper">
-     <h1>Gjett ordet</h1>
-     <div class="content">
-        <div class="inputs" disabled>
-        <div class="inputs" disabled>
-        <div class="inputs" disabled>
-        <div class="inputs" disabled>
-        <div class="inputs" disabled>
-        <div class="inputs" disabled>
     </div>
-    <div class="details">
-        <p class="hint">Hint: <span>Hint skal vises her</span></p>
-        <p class="guess-left">gjenværende gjett: <span>10</span></p>
-        <p class="wrong-letter">Feile bokstaver <span>a, b, c, d,</span></p>
-    </div>
-            <input type="text">
+    <div class="wrapper">
+      <h1>Gjett ordet <span id="playerName" class="player-name"></span></h1>
+      <p id="playerGreeting" class="player-greeting"></p>
+      <div class="content">
+        <input type="text" class="typing-input" maxlength="1">
+        <div class="inputs"></div>
+        <div class="details">
+          <p class="hint">Hint: <span></span></p>
+          <p class="guess-left">Gjenværende gjett: <span></span></p>
+          <p class="wrong-letter">Feile bokstaver: <span></span></p>
         </div>
-     </div>
-</div>
+        <button class="reset-btn">Start på nytt</button>
+      </div>
+    </div>
+    <script src="words.js"></script>
+    <script src="gjettespill.js"></script>
+
 
 
 
